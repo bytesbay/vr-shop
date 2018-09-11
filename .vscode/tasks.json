@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "VRS Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Mac",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"IOS",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"HTML5",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"Linux",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Shipping",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRS TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRS TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRS",
+				"TVOS",
+				"Test",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Linux",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"Debug",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"DebugGame",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"VRSEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		},
+		{
+			"label": "VRSEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"VRSEditor",
+				"Mac",
+				"Development",
+				"'/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject'",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+			}
+		}
+	]
+}

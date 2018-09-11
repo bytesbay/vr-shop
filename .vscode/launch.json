@@ -1,0 +1,106 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "VRS (Debug)",
+			"request": "launch",
+			"preLaunchTask": "VRS Linux Debug Build",
+			"program": "/home/bytesbay/Documents/Unreal Projects/VRS/Binaries/Linux/VRS-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "VRS (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "VRS Linux DebugGame Build",
+			"program": "/home/bytesbay/Documents/Unreal Projects/VRS/Binaries/Linux/VRS-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "VRS (Development)",
+			"request": "launch",
+			"preLaunchTask": "VRS Linux Development Build",
+			"program": "/home/bytesbay/Documents/Unreal Projects/VRS/Binaries/Linux/VRS",
+			"args": [
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "VRS (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "VRS Linux Shipping Build",
+			"program": "/home/bytesbay/Documents/Unreal Projects/VRS/Binaries/Linux/VRS-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "VRS (Test)",
+			"request": "launch",
+			"preLaunchTask": "VRS Linux Test Build",
+			"program": "/home/bytesbay/Documents/Unreal Projects/VRS/Binaries/Linux/VRS-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "VRSEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "VRSEditor Linux Debug Build",
+			"program": "/home/bytesbay/Downloads/UnrealEngine-release/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject",
+				"-debug"
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "VRSEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "VRSEditor Linux DebugGame Build",
+			"program": "/home/bytesbay/Downloads/UnrealEngine-release/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject",
+				"-debug"
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "VRSEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "VRSEditor Linux Development Build",
+			"program": "/home/bytesbay/Downloads/UnrealEngine-release/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject"
+			],
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/bytesbay/Downloads/UnrealEngine-release/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/bytesbay/Documents/Unreal Projects/VRS/VRS.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/bytesbay/Downloads/UnrealEngine-release"
+		}
+	]
+}

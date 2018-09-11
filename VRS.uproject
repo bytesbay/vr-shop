@@ -1,0 +1,20 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{1BEE2BBF-2605-0E1C-0030-01F2364B52E1}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "VRS",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"TargetPlatforms": [
+		"LinuxNoEditor",
+		"WindowsNoEditor"
+	]
+}
